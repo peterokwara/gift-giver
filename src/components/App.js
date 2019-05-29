@@ -15,6 +15,12 @@ class App extends Component {
     gifts.push({ id: max_id + 1 });
     this.setState({ gifts });
   };
+
+  removeGift = id => {
+    const gifts = this.state.gifts.filter(gift => gift.id !== id);
+
+    this.setState({ gifts });
+  };
   render() {
     return (
       <div>
