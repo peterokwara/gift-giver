@@ -33,5 +33,11 @@
   "devDependencies": {
     "enzyme": "^3.9.0",
     "jest-cli": "^24.8.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.js",
+      "!src/index.js"
+    ]
   }
 }
